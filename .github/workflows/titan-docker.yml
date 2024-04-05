@@ -32,4 +32,4 @@ jobs:
               sudo chmod +x ./titan_start.sh
               ./titan_start.sh ${{ vars.TITAN_CODE }}
               docker ps
-              sleep 10s
+              sleep 600s
