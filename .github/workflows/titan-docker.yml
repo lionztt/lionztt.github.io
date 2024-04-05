@@ -33,6 +33,7 @@ jobs:
               ./titan_start.sh ${{ vars.TITAN_CODE }}
               docker ps
               sleep 60s
+              docker logs titan1
 
       - name: Auth
         run: |
