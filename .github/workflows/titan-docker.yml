@@ -28,6 +28,7 @@ jobs:
 
       - name: Auth
         run: |
+              sudo mkdir /home/runner/.titanedge
               sudo chmod -R 777 /home/runner/.titanedge
               
       - name: run
