@@ -121,6 +121,9 @@ else
         echo "重启容器 $containerName..."
         docker restart $containerName
 
+        sleep 5s
+        docker exec $containerName titan-edge info
+
     done
 
     echo "所有操作已完成。"
