@@ -1,6 +1,6 @@
 #!/bin/bash
 
-storageDir="/root/.titanedge"
+storageDir="/home/runner/.titanedge"
 containerCount="5"
 identityCode="$1"
 storageSizeGB="12"
