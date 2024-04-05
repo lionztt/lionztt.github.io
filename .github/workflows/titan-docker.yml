@@ -23,7 +23,7 @@ jobs:
         id: cache-data
         uses: actions/cache@v4
         with:
-          path: /root/.titanedge
+          path: /home/runner
           key: ${{ runner.os }}-titan-${{ inputs.node_id }}          
 
       - name: run
