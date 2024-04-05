@@ -25,11 +25,6 @@ jobs:
         with:
           path: /home/runner/.titanedge
           key: ${{ runner.os }}-titan-${{ inputs.node_id }}          
-
-      - name: Auth
-        run: |
-              sudo mkdir /home/runner/.titanedge
-              sudo chmod -R 777 /home/runner/.titanedge
               
       - name: run
         run: |
@@ -38,3 +33,7 @@ jobs:
               ./titan_start.sh ${{ vars.TITAN_CODE }}
               docker ps
               sleep 60s
+
+      - name: Auth
+        run: |
+              sudo chmod -R 777 /home/runner/.titanedge
